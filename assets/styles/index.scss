@@ -1,12 +1,6 @@
-$background-color: #fefefe;
-$font-color: #4e4e4e;
+@import 'colors';
+@import 'typography';
+@import 'theme';
 
-body {
-  background-color: $background-color;
-  color: $font-color;
-}
-
-.quote {
-  font-size: 30px;
-  background-color: #e5e5e5;
-}
+// this must come last
+@import 'breakpoints';
