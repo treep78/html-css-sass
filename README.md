@@ -10,8 +10,8 @@
 ## Objectives
 
 -   Store style rules in variables
--   Make a custom extension to DRY out CSS
 -   Calculate styles using variables and arithmetic operations
+-   Make a custom extension to DRY out CSS
 
 ## Preparation
 
@@ -123,11 +123,15 @@ Also, use a calculation based on default `font-size` instead of using a literal
 
 Use variables to store the results of calculations.
 
-### Bonus
+## Exercise: Create an Extension
 
-Instead of using `darken`, define and use the custom functions described in the
-[Sass Guidelines](http://sass-guidelin.es/#lightening-and-darkening-colors) for
+Define the custom functions described in the [Sass
+Guidelines](http://sass-guidelin.es/#lightening-and-darkening-colors) for
 manipulating color. They provide greater control than `darken` and `lighten`.
+
+## Lab: Include an Extension
+
+Now, include your extension and use it instead of the `darken` function.
 
 ## Best Practices
 
