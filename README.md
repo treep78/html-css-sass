@@ -11,7 +11,7 @@
 
 -   Store style rules in variables
 -   Calculate styles using variables and arithmetic operations
--   Make a custom extension to DRY out CSS
+-   Make a custom mixin to DRY out CSS
 
 ## Preparation
 
@@ -134,6 +134,37 @@ Where should we place these functions?
 ## Lab: Use a Custom Function
 
 Use your custom `shade` function instead of the `darken` function.
+
+## Demo: Sass Mix-ins
+
+[Sass Mixins](http://sass-lang.com/guide) are a great way to reduce code
+duplication. Mixins can be included in rule declarations to import common rules
+that are task-focused.
+
+Our application has too much whitespace on a mobile device. Have a look at some
+[example mixins](http://www.sitepoint.com/sass-mixins-kickstart-project/). We're
+going to use the last one, the breakpoint mixin, to reveal our intention to
+change styles on mobile devices.
+
+## Exercise: Create a Mixin
+
+Copy the example code into a new Sass module at
+[`assets/styles/_breakpoint.scss`](assets/styles/_breakpoint.scss). Delete the
+`custom` breakpoint since it won't be useful for most projects.
+
+*Do not* worry about understanding this mixin code. Instead, go back to the
+article that introduced the mixin and focus on understanding how the mixin is
+used.
+
+## Lab: Use a Mixin
+
+Now that we've defined the mixin, let's include it where appropriate. Where are
+our readability settings defined?
+
+You may need to require the Sass module. Next, include the breakpoint in the
+appropriate selector. The mixin should change the style of the selected element
+so that whitespace in that element is half of the default for devices smaller
+than "tiny.
 
 ## Best Practices
 
