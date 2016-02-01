@@ -1,9 +1,9 @@
 'use strict';
 
-var example = require('../assets/scripts/example');
+var turing = require('../assets/scripts/turing');
 
 describe('Example', function () {
   it('is true', function () {
-    expect(example).toBe(true);
+    expect(turing).toBe(true);
   });
 });

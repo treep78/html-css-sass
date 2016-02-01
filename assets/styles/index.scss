@@ -1,7 +1,13 @@
-$background-color: #4e4e4e;
-$font-color: #dfdfdf;
+$background-color: #fefefe;
+$font-color: #4e4e4e;
 
 body {
   background-color: $background-color;
   color: $font-color;
+}
+
+.quote {
+  font-size: 1.5em;
+  background-color: #e5e5e5;
+  width: 75%;
 }
