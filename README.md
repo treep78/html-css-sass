@@ -60,10 +60,8 @@ import statements to find all the files it needs. If we leave a module out of
 this file and it isn't included inside another module, it won't affect the
 styling of our page.
 
-In general, you should `@import` a module when it is used inside the current
-module. For the modules that apply to our entire application, we should include
-them in our manifest as well. Sass will not duplicate rules if they're imported
-in multiple places.
+In general, you should only `@import` a module **once**. The manifest is usually
+a good place for that.
 
 ## Lab: Typography
 
@@ -160,6 +158,10 @@ used.
 
 Now that we've defined the mixin, let's include it where appropriate. Where are
 our readability settings defined?
+
+The problem with including our breakpoints in our 'typography' module is that we
+need to ensure the breakpoints are the last rules applied. For now, just include
+the breakpoints in the manifest.
 
 You may need to require the Sass module. Next, include the breakpoint in the
 appropriate selector. The mixin should change the style of the selected element
