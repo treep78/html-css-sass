@@ -123,15 +123,17 @@ Also, use a calculation based on default `font-size` instead of using a literal
 
 Use variables to store the results of calculations.
 
-## Exercise: Create an Extension
+## Exercise: Create a Custom Function
 
 Define the custom functions described in the [Sass
 Guidelines](http://sass-guidelin.es/#lightening-and-darkening-colors) for
 manipulating color. They provide greater control than `darken` and `lighten`.
 
-## Lab: Include an Extension
+Where should we place these functions?
 
-Now, include your extension and use it instead of the `darken` function.
+## Lab: Use a Custom Function
+
+Use your custom `shade` function instead of the `darken` function.
 
 ## Best Practices
 
