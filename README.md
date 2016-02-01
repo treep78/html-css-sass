@@ -108,19 +108,20 @@ use the generic block element, `div`, for our quote, instead.
 We already have a style that draws attention to the quote in our manifest. Let's
 clean that up by extracting that rule into a module.
 
-## Exercise: Create a Quote Module
+## Exercise: Move Quote Styles
 
-Extract the styles related to the quote into their own module. Remember to
-include the new module in your manifest.
+Move the quote style declarations into the theme. Why would we want to keep
+these styles in the theme module?
 
 ## Lab: Use Sass Functions
 
-When you extract the module, make use of existing color definitions and the Sass
-`darken` function to darken the `$background-color` by 10% instead of writing
-a color literal.
+Make use of existing color definitions and the Sass `darken` function to darken
+the `$background-color` by 10% instead of writing a color literal.
 
 Also, use a calculation based on default `font-size` instead of using a literal
-`em` unit.
+`px` unit.
+
+Use variables to store the results of calculations.
 
 ### Bonus
 
@@ -152,6 +153,7 @@ community-maintained list of best practices and explanations.
 
 -   [Color Picker - Explore Colors for HTML and CSS](http://www.hexcolortool.com)
 -   [Controlling color with Sass color functions](https://robots.thoughtbot.com/controlling-color-with-sass-color-functions)
+-   [PXtoEM.com: PX to EM conversion made simple.](http://pxtoem.com/)
 
 ## [License](LICENSE)
 
