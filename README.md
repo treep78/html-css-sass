@@ -9,6 +9,7 @@
 
 ## Objectives
 
+-   Understanding nested CSS rules
 -   Store style rules in variables
 -   Calculate styles using variables and arithmetic operations
 -   Make a custom mixin to DRY out CSS
@@ -21,10 +22,11 @@
 
 ## Sass
 
-[Sass](http://sass-lang.com) is a powerful [CSS
-preprocessor](https://github.com/showcases/css-preprocessors). CSS preprocessors
-use programming languages like Ruby, C, or JavaScript to add features to your
-stylesheets that are absent from native CSS. Some examples include:
+[Sass](http://sass-lang.com) (Syntactically Awesome Style Sheets) is a powerful
+[CSS preprocessor](https://github.com/showcases/css-preprocessors). CSS
+preprocessors use programming languages like Ruby, C, or JavaScript to add
+features to your stylesheets that are absent from native CSS.
+Some examples include:
 
 -   variables,
 -   calculations,
@@ -39,6 +41,56 @@ Examples of how you can use a preprocessor like Sass:
 
 Let's start by defining a theme for an example application.
 
+## Nested Selectors
+
+ This should feel natural. Let's go from:
+
+```CSS
+section.intro {
+  max-width: 1200px;
+  text-align: center;
+}
+
+section.intro > h1 {
+  font-size: 32px;
+  color: #000;
+}
+
+section.intro > h1:hover {
+  opacity: .5;
+}
+
+section.intro > ul {
+  list-style-type: none;
+}
+
+section.intro ul li {
+  padding: 10px auto;
+}
+```
+
+To:
+
+```CSS
+section.intro {
+  max-width: 1200px;
+  text-align: center;
+  & > h1 {
+    font-size: 32px;
+    color: #000;
+    &:hover{
+      opacity: .5;
+    }
+  }
+  & > ul {
+    list-style-type: none;
+    li{
+      padding: 10px auto;
+    }
+  }
+}
+```
+
 ## Demo: Save Colors as Variables
 
 Let's have a look at the current styles in
@@ -46,10 +98,10 @@ Let's have a look at the current styles in
 already making use of a great feature of Sass: variables. You should save
 important bits of style, especially colors, with a descriptive, useful name.
 
-## Exercise: Semantic Color Names and Theming
+## Code Along: Semantic Color Names and Theming
 
-These variables names aren't that great. First, I'll create a colors module that
-defines semantic names for the inscrutable hexadecimal color literals we're
+These variables' names aren't that great. First, I'll create a colors module
+that defines semantic names for the inscrutable hexadecimal color literals we're
 using. Then, I'll create a theme module that gives us a better idea of how these
 colors map to styles on our page.
 
@@ -79,7 +131,9 @@ rules include, but are not limited to:
 -   `font-size`
 -   `padding`
 
-Save *only the rules that deal with typography* in
+Let's target `body` and `h`eader-wide adjustments we can make to our page.
+
+Save _**only** the rules that deal with typography_ in
 [`assets/styles/typography.scss`](assets/styles/typography.scss) and be sure to
 include it inside your manifest.
 
@@ -123,7 +177,7 @@ Use variables to store the results of calculations.
 
 ## Exercise: Create a Custom Function
 
-Define the custom functions described in the [Sass
+Define the custom `tint` and `shade` functions described in the [Sass
 Guidelines](http://sass-guidelin.es/#lightening-and-darkening-colors) for
 manipulating color. They provide greater control than `darken` and `lighten`.
 
@@ -133,7 +187,7 @@ Where should we place these functions?
 
 Use your custom `shade` function instead of the `darken` function.
 
-## Demo: Sass Mix-ins
+## Demo: Sass Mixins
 
 [Sass Mixins](http://sass-lang.com/guide) are a great way to reduce code
 duplication. Mixins can be included in rule declarations to import common rules
@@ -144,13 +198,13 @@ Our application has too much whitespace on a mobile device. Have a look at some
 going to use the last one, the breakpoint mixin, to reveal our intention to
 change styles on mobile devices.
 
-## Exercise: Create a Mixin
+## Code Along: Create a Mixin
 
 Copy the example code into a new Sass module at
-[`assets/styles/_breakpoint.scss`](assets/styles/_breakpoint.scss). Delete the
+[`assets/styles/breakpoint.scss`](assets/styles/breakpoint.scss). Delete the
 `custom` breakpoint since it won't be useful for most projects.
 
-*Do not* worry about understanding this mixin code. Instead, go back to the
+_Do not_ worry about understanding this mixin code. Instead, go back to the
 article that introduced the mixin and focus on understanding how the mixin is
 used.
 
@@ -159,14 +213,14 @@ used.
 Now that we've defined the mixin, let's include it where appropriate. Where are
 our readability settings defined?
 
-The problem with including our breakpoints in our 'typography' module is that we
+The problem with including our breakpoints in our `typography` module is that we
 need to ensure the breakpoints are the last rules applied. For now, just include
 the breakpoints in the manifest.
 
 You may need to require the Sass module. Next, include the breakpoint in the
 appropriate selector. The mixin should change the style of the selected element
 so that whitespace in that element is half of the default for devices smaller
-than "tiny.
+than `tiny`.
 
 ## Best Practices
 
@@ -190,6 +244,7 @@ community-maintained list of best practices and explanations.
 
 ## Additional Resources
 
+-   [Color-Hex - Explore Colors and Color Palattes](http://www.color-hex.com)
 -   [Color Picker - Explore Colors for HTML and CSS](http://www.hexcolortool.com)
 -   [Controlling color with Sass color functions](https://robots.thoughtbot.com/controlling-color-with-sass-color-functions)
 -   [PXtoEM.com: PX to EM conversion made simple.](http://pxtoem.com/)
