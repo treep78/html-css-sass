@@ -143,8 +143,7 @@ In publishing, it is often desirable to pick essential quotes in content and
 re-print them using special styling that draws attention to the importance of
 that specific content. These are sometimes called "block quotes" or "callouts".
 
-We have an example of such a quote in [`index.html`](index.html). Some would
-argue that quotes are not paragraphs, but I think semantically they are. Here's
+We have an example of such a quote in [`index.html`](index.html). Here's
 what Mozilla considers the semantics of paragraph elements:
 
 > Paragraphs are usually represented in visual media as blocks of text that are
@@ -152,10 +151,6 @@ what Mozilla considers the semantics of paragraph elements:
 > indentation. Paragraphs are block-level elements.
 >
 > [<p> - HTML (HyperText Markup Language) &#124; MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)
-
-Since semantics don't just depend on what developers think the semantics are,
-but how the reader of our content would interpret meaning, it is acceptable to
-use the generic block element, `div`, for our quote, instead.
 
 We already have a style that draws attention to the quote in our manifest. Let's
 clean that up by extracting that rule into a module.
