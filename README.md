@@ -39,8 +39,6 @@ Examples of how you can use a preprocessor like Sass:
 -   [Make Your Application Themeable](http://webdesign.tutsplus.com/tutorials/how-to-use-sass-to-build-one-project-with-multiple-themes--cms-22104)
 -   [Improve Your Markup by Extending Classes](https://coderwall.com/p/wixovg/bootstrap-without-all-the-debt)
 
-Let's start by defining a theme for an example application.
-
 ## Nested Selectors
 
  This should feel natural. Let's go from:
@@ -93,7 +91,8 @@ section.intro {
 
 ## Demo: Save Colors as Variables
 
-Let's have a look at the current styles in
+Let's start by defining a theme for an example application.
+Have a look at the current styles in
 [`assets/styles/index.scss`](assets/styles/index.scss). You'll see that we're
 already making use of a great feature of Sass: variables. You should save
 important bits of style, especially colors, with a descriptive, useful name.
