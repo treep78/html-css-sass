@@ -5,7 +5,7 @@
 ## Prerequisites
 
 -   [ga-wdi-boston/html-css](https://github.com/ga-wdi-boston/html-css)
--   [ga-wdi-boston/js-template-installation](https://github.com/ga-wdi-boston/js-template-installation)
+-   [ga-wdi-boston/js-template-installation](https://github.com/ga-wdi-boston/js-template)
 
 ## Objectives
 
