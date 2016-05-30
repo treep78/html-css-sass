@@ -8,7 +8,7 @@ module.exports = {
     entry: {
       bundle: './index.js',
       specs: './spec/_all.js',
-      vendor: ['jquery'],
+      vendor: ['jquery', 'bootstrap-sass'],
     },
 
     output: {
@@ -24,6 +24,7 @@ module.exports = {
         "window.jQuery": "jquery"
       })
     ],
+
     module: {
       loaders: [
         {
@@ -51,6 +52,14 @@ module.exports = {
         {
           test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
           loader: "file-loader"
+        },
+        {
+          test: /\.(hbs|handlebars)$/,
+          loader: 'handlebars-loader'
+        },
+        {
+          test: /\.html\.(hbs|handlebars)$/,
+          loader: 'handlebars-loader!html'
         }
       ]
     },
