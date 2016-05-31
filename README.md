@@ -5,7 +5,7 @@
 ## Prerequisites
 
 -   [ga-wdi-boston/html-css](https://github.com/ga-wdi-boston/html-css)
--   [ga-wdi-boston/js-template-installation](https://github.com/ga-wdi-boston/js-template-installation)
+-   [ga-wdi-boston/js-template](https://github.com/ga-wdi-boston/js-template)
 
 ## Objectives
 
@@ -80,7 +80,7 @@ section.intro {
       opacity: .5;
     }
   }
-  & > ul {
+  & ul {
     list-style-type: none;
     li{
       padding: 10px auto;
@@ -154,8 +154,6 @@ what Mozilla considers the semantics of paragraph elements:
 We already have a style that draws attention to the quote in our manifest. Let's
 clean that up by extracting that rule into a module.
 
-## Exercise: Move Quote Styles
-
 Move the quote style declarations into the theme. Why would we want to keep
 these styles in the theme module?
 
@@ -169,7 +167,7 @@ Also, use a calculation based on default `font-size` instead of using a literal
 
 Use variables to store the results of calculations.
 
-## Exercise: Create a Custom Function
+## Code Along: Create a Custom Function
 
 Define the custom `tint` and `shade` functions described in the [Sass
 Guidelines](http://sass-guidelin.es/#lightening-and-darkening-colors) for
