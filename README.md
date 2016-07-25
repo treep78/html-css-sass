@@ -62,7 +62,7 @@ section.intro > ul {
   list-style-type: none;
 }
 
-section.intro ul li {
+section.intro > ul li {
   padding: 10px auto;
 }
 ```
@@ -80,7 +80,7 @@ section.intro {
       opacity: .5;
     }
   }
-  & ul {
+  & > ul {
     list-style-type: none;
     li{
       padding: 10px auto;
