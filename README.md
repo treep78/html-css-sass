@@ -160,10 +160,10 @@ these styles in the theme module?
 ## Lab: Use Sass Functions
 
 Make use of existing color definitions and the Sass `darken` function to darken
-the `$background-color` by 10% instead of writing a color literal.
+the `$background-color` for your quote by 10% instead of writing a color literal.
 
 Also, use a calculation based on default `font-size` instead of using a literal
-`px` unit.
+`px` unit to make your quote's font size 50% larger.
 
 Use variables to store the results of calculations.
 
