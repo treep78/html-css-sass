@@ -5,11 +5,12 @@
 ## Prerequisites
 
 -   [ga-wdi-boston/html-css](https://github.com/ga-wdi-boston/html-css)
+-   [ga-wdi-boston/html-css-layout](https://github.com/ga-wdi-boston/html-css-layout)
 -   [ga-wdi-boston/js-template](https://github.com/ga-wdi-boston/js-template)
 
 ## Objectives
 
--   Understanding nested CSS rules
+-   Explain nested CSS rules
 -   Store style rules in variables
 -   Calculate styles using variables and arithmetic operations
 -   Make a custom mixin to DRY out CSS
@@ -41,7 +42,7 @@ Examples of how you can use a preprocessor like Sass:
 
 ## Nested Selectors
 
- This should feel natural. Let's go from:
+This should feel natural. Let's go from:
 
 ```CSS
 section.intro {
@@ -160,7 +161,8 @@ these styles in the theme module?
 ## Lab: Use Sass Functions
 
 Make use of existing color definitions and the Sass `darken` function to darken
-the `$background-color` for your quote by 10% instead of writing a color literal.
+the `$background-color` for your quote by 10% instead of writing a color
+literal.
 
 Also, use a calculation based on default `font-size` instead of using a literal
 `px` unit to make your quote's font size 50% larger.
@@ -243,5 +245,6 @@ community-maintained list of best practices and explanations.
 
 ## [License](LICENSE)
 
-Source code distributed under the MIT license. Text and other assets copyright
-General Assembly, Inc., all rights reserved.
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or alternative
+licensing, please contact legal@ga.co.
