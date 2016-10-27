@@ -35,7 +35,7 @@ Some examples include:
 
 Examples of how you can use a preprocessor like Sass:
 
--   [Build A Pleasing Color Scheme Programmatically](http://devmag.org.za/2012/07/29/how-to-choose-colours-procedurally-algorithms/)
+-   [Build A Pleasing Color Scheme Programmatically](http://thesassway.com/advanced/how-to-programtically-go-from-one-color-to-another-in-sass)
 -   [Build Your Own Custom Grid](http://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540)
 -   [Make Your Application Themeable](http://webdesign.tutsplus.com/tutorials/how-to-use-sass-to-build-one-project-with-multiple-themes--cms-22104)
 -   [Improve Your Markup by Extending Classes](https://coderwall.com/p/wixovg/bootstrap-without-all-the-debt)
