@@ -185,14 +185,14 @@ Use your custom `shade` function instead of the `darken` function.
 
 ## Demo: Sass Mixins
 
-[Sass Mixins](http://sass-lang.com/guide) are a great way to reduce code
+[Sass Mixins](http://sass-lang.com/guide#mixins) are a great way to reduce code
 duplication. Mixins can be included in rule declarations to import common rules
 that are task-focused.
 
 Our application has too much whitespace on a mobile device. Have a look at some
-[example mixins](http://www.sitepoint.com/sass-mixins-kickstart-project/). We're
-going to use the last one, the breakpoint mixin, to reveal our intention to
-change styles on mobile devices.
+[example mixins](http://www.sitepoint.com/sass-mixins-kickstart-project/).
+ We're going to use the last one, the
+ [breakpoint mixin](http://www.sitepoint.com/sass-mixins-kickstart-project/#breakpoint-handler), to reveal our intention to change styles on mobile devices.
 
 ## Code Along: Create a Mixin
 
