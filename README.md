@@ -204,19 +204,22 @@ _Do not_ worry about understanding this mixin code. Instead, go back to the
 article that introduced the mixin and focus on understanding how the mixin is
 used.
 
-## Lab: Use a Mixin
-
 Now that we've defined the mixin, let's include it where appropriate. Where are
 our readability settings defined?
 
 The problem with including our breakpoints in our `typography` module is that we
-need to ensure the breakpoints are the last rules applied. For now, just include
-the breakpoints in the manifest.
+need to ensure the breakpoints are the last rules applied. For now, create a new file [`assets/styles/breakpoints.scss`](assets/styles/breakpoints.scss) and include
+it in the manifest.
 
-You may need to require the Sass module. Next, include the breakpoint in the
-appropriate selector. The mixin should change the style of the selected element
+## Lab: Use a Mixin
+
+The mixin should change the style of the selected element
 so that whitespace in that element is half of the default for devices smaller
 than `tiny`.
+
+1. Import your the Sass module that has your mixin.
+2. Choose the selector you want to apply the mixin to.
+3. Use `@include` to use your mixin. 
 
 ## Best Practices
 
