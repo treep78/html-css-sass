@@ -100,6 +100,9 @@ important bits of style, especially colors, with a descriptive, useful name.
 
 ## Code Along: Semantic Color Names and Theming
 
+1. Create two files in `assets/styles/` called `theme.scss` and `colors.scss`.
+2. Copy and paste all of the code from `index.scss` to `theme.scss`.
+
 These variables' names aren't that great. First, I'll create a colors module
 that defines semantic names for the inscrutable hexadecimal color literals we're
 using. Then, I'll create a theme module that gives us a better idea of how these
