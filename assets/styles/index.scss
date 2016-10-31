@@ -1,15 +1,7 @@
 // $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 // @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'color';
+@import 'typography';
+@import 'theme';
 
-$background-color: #fefefe;
-$font-color: #4e4e4e;
-
-body {
-  background-color: $background-color;
-  color: $font-color;
-}
-
-.quote {
-  background-color: #e5e5e5; // gray
-  font-size: 30px;
-}
+@import 'breakpoints';

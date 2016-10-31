@@ -1,0 +1,26 @@
+$font-color: $charcoal;
+$body-padding: 0 10px;
+$body-margins: 40px auto;
+$body-display: block;
+$body-width: 650px;
+$vertical-margin: 40px;
+
+
+body
+{
+  background-color: $background-color;
+  color: $font-color;
+  margin: $body-margins;
+  padding: $body-padding;
+  display: $body-display;
+  width: $body-width;
+  line-height: $body-line-height;
+  font-size: $body-font-size;
+}
+
+.quote
+{
+  background-color: $quote-background-color;
+  border-radius: $quote-border-radius;
+  font-size: $quote-font-size;
+}
