@@ -1,0 +1,27 @@
+$paper-white: #fefefe;
+$charcoal: #4e4e4e;
+$light-grey: #e5e5e5;
+$white: #fff;
+$black: #000;
+
+
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage)
+{
+  @return mix($white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage)
+{
+  @return mix($black, $color, $percentage);
+}
